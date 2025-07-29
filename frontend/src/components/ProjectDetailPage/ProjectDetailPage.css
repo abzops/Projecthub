@@ -9,6 +9,7 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
+
 .detail-title {
     font-size: 2.5rem; /* 40px */
     color: #1a202c;
@@ -63,4 +64,8 @@
 
 .detail-button:hover {
     background-color: #1a202c;
+}
+.project-card-link {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
 }
