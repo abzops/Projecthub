@@ -57,7 +57,7 @@ const ProjectDetailPage = () => {
             </div>
 
             <img 
-                src={`http://127.0.0.1:8000${project.cover_image}`} 
+                src={`${project.cover_image}`} 
                 alt={`${project.title} cover`} 
                 className="detail-image"
                 onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/1200x600/2d3748/ffffff?text=Project'; }}

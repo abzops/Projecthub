@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'; // Import the Link component
 import './ProjectCard.css';
 
 const ProjectCard = ({ project }) => {
-    const imageUrl = `http://127.0.0.1:8000${project.cover_image}`;
 
     // We wrap the entire card content in a Link component.
     // The 'to' prop specifies the destination URL.
@@ -13,7 +12,7 @@ const ProjectCard = ({ project }) => {
         <Link to={`/project/${project.id}`} className="project-card-link">
             <div className="project-card">
                 <img 
-                    src={imageUrl} 
+                    src={project.cover_image || 'https://placehold.co/600x400/2d3748/ffffff?text=Project'} 
                     alt={`${project.title} cover`} 
                     className="card-image"
                     onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/600x400/2d3748/ffffff?text=Project'; }}
