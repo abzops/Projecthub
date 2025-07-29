@@ -6,6 +6,7 @@ import ProjectListPage from './components/ProjectListPage/ProjectListPage';
 import ProjectDetailPage from './components/ProjectDetailPage/ProjectDetailPage';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
+import LandingPage from './Pages/LandingPage';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <div className="App">
         <Navbar /> 
         <Routes>
-          <Route path="/" element={<ProjectListPage />} />
+          <Route path="/" element={<LandingPage/>} />
+          <Route path="/projects" element={<ProjectListPage />} />
           <Route path="/project/:projectId" element={<ProjectDetailPage />} />
         </Routes>
       </div>

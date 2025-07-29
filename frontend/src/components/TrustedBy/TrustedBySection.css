@@ -1,0 +1,65 @@
+/* TrustedBySection.css */
+.trusted-section {
+  padding: 2.5rem 1rem;
+  position: relative;
+}
+
+.trusted-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.trusted-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-bottom: 1.25rem;
+  font-weight: 500;
+}
+
+.institution-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem 2.5rem;
+  margin: 0 auto;
+}
+
+.institution {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #1e293b;
+  position: relative;
+  padding: 0 0.5rem;
+}
+
+.institution:not(:last-child)::after {
+  content: "•";
+  position: absolute;
+  right: -1.5rem;
+  color: #cbd5e1;
+}
+
+.trusted-footnote {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 400;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .institution-grid {
+    gap: 1rem 2rem;
+  }
+  
+  .institution {
+    font-size: 1.1rem;
+  }
+  
+  .institution:not(:last-child)::after {
+    right: -1.25rem;
+  }
+}
